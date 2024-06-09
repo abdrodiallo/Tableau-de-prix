@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#pricing{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.section-text-p1{
+    text-align: center;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.card-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    color: #252a35;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    width: 280px;
+    height: 500px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    margin: 0 20px;
+}
+
+.card-header{
+    padding: 0 0 20px;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.price{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.price span.duration{
+    font-size: 16px;
+}
+
+.card-body{
+    height: 240px;
+}
+
+.features-list{
+    list-style: none;
+}
+
+.feature{
+    margin: 10px 0;
+}
+
+.feature i{
+    margin-right: 5px;
+}
+
+.card-btn{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #252a35;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    background: #2AB694;
+    color: #fff;
+}
+
+.card:hover .card-btn{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.card-btn:hover{
+    color: #2AB694 !important;
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.featured{
+    background: #ededed;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured::after{
+    content: "Populair";
+    position: absolute;
+    top: 20px;
+    right: -45px;
+    width: 150px;
+    height: 25px;
+    background: #252a35;
+    color: #fff;
+    text-align: center;
+    transform: rotate(45deg);
+    transition: 0.3s ease;
+}
+
+.card:hover.featured::after{
+    background: #fff;
+    color: #2AB694;
+    font-weight: 500;
+}
+
+
+
+
